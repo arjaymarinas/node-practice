@@ -3,11 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
     <title>Node JS Practice</title>
 </head>
 <body>
-    <div class="w-fu">
-        <h1 class="text-blue-600">Hello World!</h1>
+    <div class="w-full flex justify-center items-center h-screen">
+        <div class="w-2/6 bg-gray-100 flex justify-center rounded-lg items-center">
+            <div class="w-full p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Login</h2>
+                <form method="post" action="/login">
+                    <div class="mb-4">
+                        <label for="username" class="block text-gray-700 mb-2">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Your username" class="mt-1 block w-full h-10 rounded-md px-4 py-4 shadow-sm focus-visible: outline-1 focus-visible: outline-gray-200">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Your Password" class="mt-1 block w-full h-10 rounded-md px-4 py-4 shadow-sm focus-visible: outline-1 focus-visible: outline-gray-200">
+                    </div>
+                    <div class="flex items-center justify-between mb-8">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="myCheckbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                            <label for="myCheckbox" class="ml-2 block text-gray-900">Remember me</label>
+                        </div>
+                        <a href="#" class="text-indigo-500 hover:underline">Forgot Password?</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="submit" class="bg-indigo-500 text-white py-2 px-4 w-full rounded-md hover:bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
