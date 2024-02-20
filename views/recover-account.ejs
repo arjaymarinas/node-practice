@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Node JS Practice</title>
+</head>
+<body>
+    <div class="w-full flex justify-center items-center h-screen">
+        <div class="w-2/6 bg-gray-100 flex justify-center rounded-lg items-center">
+            <div class="w-full p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Forgot Password</h2>
+                <form method="post" action="/account/forgot-password">
+                    <div class="mb-4">
+                        <label for="username" class="block text-gray-700 mb-2">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Your username" class="mt-1 block w-full h-10 rounded-md px-4 py-4 shadow-sm focus-visible: outline-1 focus-visible: outline-gray-200">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="submit" class="bg-indigo-500 text-white py-2 px-4 w-full rounded-md hover:bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50">Reset password</button>
+                    </div>
+                    <div class="flex items-center justify-center mt-4">
+                        <a href="/" class="text-indigo-500 hover:underline text-sm">Login instead</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
