@@ -200,8 +200,8 @@ function sendEmail(email, resetLink, subject, message) {
       host: 'smtp.gmail.com',
       port: 587,
       auth: {
-        user: 'icttech@mcnp.edu.ph',
-        pass: 'Ghost.0153',
+        user: '',
+        pass: '',
       },
     });
   
